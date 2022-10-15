@@ -1,34 +1,20 @@
-#content {
-    max-width: 1600px;
-    width: 1600px;
-    margin: 0 auto;
-}
-
-nav a {
-    text-align: center;
-    color: #ffb703;
-    text-decoration: none;
-}
-
-#hero-msg h1, #hero-msg h4 {
-    text-align: center;
-}
-
-.button-box {
-    text-align: center;
-}
-
-main section {
-    text-align: center;
-}
-
-#background {
-    height: 725px;
-    background-color: #020847 ;
-}
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Black+Ops+One&family=Oswald&display=swap');
 
 body {
     background-color:#ffffff ;
+    font-family: Oswald, Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+#logo_link {
+     padding-top: 5px; 
 }
 
 header {
@@ -40,22 +26,100 @@ nav a:hover {
     color: #ffb703;
 }
 
-.book, .join {
-    background-color: #ffb703;
+nav a {
+    text-align: center;
+    color: #ffb703;
     text-decoration: none;
+    padding: 35px;
+}
+
+#hero {
+    border-bottom: 1px solid #020847;
+    border-left: 1px solid #020847;
+    border-right: 1px solid #020847;
+    padding-bottom: 40px;
+}
+
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+}
+
+.home-title {
+    color: #bd8122;
+    font-family: "Black Ops One", Helvetica, sans-serif;
+    font-size: 2em;
+    margin-top: 10px;   
+}
+
+h4 {
+    color: #bd8122;
+}
+
+.button-box {
+    text-align: center;
+}
+
+main section {
+    text-align: center;
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
+.book, .join {
+    background-color: #020847;
+    color: #ffb703;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
     background-color: #ffffff;
 }
 
+#background {
+    height: 725px;
+    background-color: #020847 ;
+    margin-bottom: 120px;
+}
+
 .msg {
     background-color:#ffb703 ;
+    line-height: 1.5em;
+    padding: 35px;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+.msg h2 {
+    color: #020847;
+    font-family: "Black Ops One", Helvetica, sans-serif;
+}
+
+.msg p {
+    color: #020847;
+    font-size: 1em;
+    padding-bottom: 15px ;
+    padding-top: 15px
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+    padding: 0px 0px;
 }
 
 footer {
     background-color:#020847 ;
     color: #ffb703;
+    padding: 25px 50px;
+    margin-top: 200px
 }
 
 footer a {
@@ -76,20 +140,9 @@ footer p:hover {
     color: #ffffff;
 }
 
-.home-title {
-    color: #bd8122;
-}
-
-h4 {
-    color: #bd8122;
-}
-
-.msg h2 {
-    color: #020847;
-}
-
-.msg p {
-    color: #020847;
+footer .social img {
+    padding-top: 15px;
+    padding-left: 5px;
 }
 
 /* images */
@@ -104,4 +157,14 @@ h4 {
 
 .icon {
     width: 80px;
+    padding-top: 10px;
+}
+
+.card-img {
+    border: 10px solid #ffb703;
+}
+
+.mountains {
+    margin-bottom: 210px;
+
 }
