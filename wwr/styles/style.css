@@ -34,9 +34,9 @@ nav a {
 }
 
 #hero {
-    border-bottom: 1px solid #020847;
+    /* border-bottom: 1px solid #020847;
     border-left: 1px solid #020847;
-    border-right: 1px solid #020847;
+    border-right: 1px solid #020847; */
     padding-bottom: 40px;
 }
 
@@ -105,7 +105,7 @@ h2 {
 
 .msg p {
     color: #020847;
-    font-size: 1em;
+    font-size: 0.8em;
     padding-bottom: 15px ;
     padding-top: 15px
 }
