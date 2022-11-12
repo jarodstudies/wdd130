@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Black+Ops+One&family=Oswald&display=swap');
 
+/* *{box-sizing: border-box;} */
+
 body {
     background-color:#ffffff ;
     font-family: Oswald, Helvetica, sans-serif;
@@ -247,25 +249,61 @@ footer .social img {
 /*  */
 /* River SubPage  */
 
-.river_images {
+.river-image{
+    position: relative;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr;
-    padding-bottom: 100px;
-    /* margin-bottom: 100px; */
-    
+    grid-template-rows: 1fr;
+    /* padding-bottom: 150px; */
+    /* border: 10px solid #ffb703;  */
 }
+
+
+  .river_heading {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #ffb703;
+    font-family: "Black Ops One", Helvetica, sans-serif;
+    z-index: 2;
+  }
+
+  #cf .image2 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    z-index: 1;
+    height: 400px;
+
+  }
+
+  #cf .image3 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 400px;
+  }
+
+  #cf {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 0 auto;
+  }
+
 
 /* .river_images img {
     grid-column: 1/2;
     grid-row: 1/2;
 } */
 
-.image1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
+/* .image1 {
     width: 100%;
     height: 600px;
-    
 }
 
 .image2 {
@@ -287,7 +325,7 @@ footer .social img {
     grid-row: 1/2;
     width: 100%;
     height: 600px;
-}
+} */
 
 .river_heading {
     grid-column: 1/2;
@@ -302,7 +340,10 @@ footer .social img {
 .river_content {
     display: grid;
     grid-template-columns: 2fr 4fr 2fr;
-    grid-row: 1fr 1fr 1fr auto;
+    grid-template-rows: 1fr 1fr 1fr auto;
+    background-color: #020847;
+    padding-top: 20px;
+    padding-bottom: 100px;
 }
 
 /* .river_content img {
@@ -335,13 +376,13 @@ footer .social img {
 }
 
 .river_section1 p {
-    grid-template-columns: 2/5;
+    grid-column:  2/3;
     color: #020847;
     align-self: center;
     justify-self: center;
     text-align: center;
-    margin-left: 100px;
-    font-size: 1.4em;
+    margin-right: 50px;
+    font-size: 1em;
     line-height: 1.5em;
     background-color: #ffb703;
     padding: 20px;
@@ -353,8 +394,8 @@ footer .social img {
 .river_section1 img {
     grid-column: 1/2;
     border: 10px solid #ffb703 ;
-    height: 400px;
-    width: 600px;
+    height: 300px;
+    width: 400px;
     justify-self: center;
     align-self: center;
 }
@@ -384,14 +425,14 @@ footer .social img {
 }
 
 .river_section2 p {
-    grid-template-columns: 1/2;
+    grid-column: 1/2;
     grid-row: 2/3;
     color: #020847;
     align-self: center;
     justify-self: center;
     text-align: center;
-    margin-right: 100px;
-    font-size: 1.4em;
+    margin-left: 100px;
+    font-size: 1em;
     line-height: 1.5em;
     background-color: #ffb703;
     padding: 20px;
@@ -401,8 +442,8 @@ footer .social img {
 .river_section2 img {
     grid-column: 2/3;
     border: 10px solid #ffb703 ;
-    height: 400px;
-    width: 600px;
+    height: 300px;
+    width: 400px;
     justify-self: center;
     align-self: center;
     
@@ -420,7 +461,7 @@ footer .social img {
 
 .river_section3 h1 {
     grid-column: 1/2;
-    font-size: 2.5em;
+    font-size: 2em;
     justify-self: center;
     align-self: center;
     text-align: center;
@@ -432,13 +473,13 @@ footer .social img {
 }
 
 .river_section3 p {
-    grid-template-columns: 2/5;
+    grid-column: 2/5;
     color: #020847;
     align-self: center;
     justify-self: center;
     text-align: center;
-    margin-left: 100px;
-    font-size: 1.4em;
+    margin-right: 50px;
+    font-size: 1em;
     line-height: 1.5em;
     background-color: #ffb703;
     padding: 20px;
@@ -449,8 +490,8 @@ footer .social img {
 .river_section3 img {
     grid-column: 1/2;
     border: 10px solid #ffb703 ;
-    height: 400px;
-    width: 600px;
+    height: 300px;
+    width: 400px;
     justify-self: center;
     align-self: center;
 }
