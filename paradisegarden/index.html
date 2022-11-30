@@ -47,13 +47,44 @@
                         person who might be living on the second floor, but has a big balcony they can use, or a person who just wants to 
                         build a fire pit in an area of their garden. </p>
                 </section>
+
                 <div class="main-image">
-                    <img src="images/show.jpg" alt="">
+                        <!-- Slideshow container -->
+                    <div class="slideshow-container">
+
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="images/show.jpg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="images/balconyshow.jpg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="images/gabions.jpg" style="width:100%" >
+                        </div>
+                    
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    <!-- The dots/circles -->
+                    <div class="dots" style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div> 
+                    <!-- <img src="images/show.jpg" alt="show image"> -->
                     <nav>
                         <a href="plants.html">Plants</a>
                         <a href="hardlandscaping.html">Hard Landscpaing</a>
                     </nav>
-                    <button type="button">Next image</button>
+                    <!-- <button type="button">Next image</button> -->
                 </div>
                 <div class="image-text2">
                     <img src="images/hang.jpg" alt="show garden image">
@@ -63,7 +94,7 @@
                         landscaping used, so they may be able to plan when and how they want to build their garden space, users will also 
                         be able to filter through their budget, on how much they are willing to spend on their garden at the current time. 
                         This will help the users find plants and elements to fit their budget.</p>
-                </div>
+                </div> 
             </main>
             <footer>
                 <p>Paradise Gardens &copy; 2022 - Jarod Ramos</p>
@@ -81,6 +112,37 @@
                     </a>
                 </div>
             </footer>
-        </div>  
+        </div>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            }
+
+        </script>  
     </body>
     </html>
