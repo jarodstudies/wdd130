@@ -481,6 +481,7 @@ footer p a:hover{
 
 section h3 {
    font-family: "Yeseva One", Helvetica, sans-serif;
+   color: #778745;
 }
 
 #plants h1 {
@@ -539,11 +540,6 @@ input {
    color: #386b38;
    
 }
-
-.search-bar1 h3 {
-   color: #778745;
-}
-
 
 #main {
    grid-column: 2/3;
@@ -688,6 +684,136 @@ input {
    grid-row: 6/7;
    grid-column: 2/3;
 } */
+
+
+/* Subpage Hardlandscaping  */
+
+#hardlandscaping {
+   display: grid;
+   grid-template-columns: 30% 70% ;
+   grid-template-rows: 1450px ;
+   margin: 0 auto;
+   text-align: center;
+}
+
+#hardlandscaping h1 {
+   grid-column: 1/3;
+   grid-row: 1/2;
+   font-family: "Yeseva One", Helvetica, sans-serif;
+   color: #778745;
+   font-size: 40px;
+   /* justify-self: center;
+   align-self: center; */
+   margin-top: 130px;
+}
+
+.search-bar-hl {
+   grid-column: 1/2;
+   grid-row: 1/2; 
+   border: 10px solid #386b38 ;
+   background-color: #f3f5e0;
+   width: 90% ;
+   height: 92%;
+   justify-self: center;
+   margin-top: 100px;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 350px 150px 150px 150px 150px 350px;
+}
+
+.img-hl1 img {
+   grid-column: 1/2;
+   grid-row: 1/2;
+   height: 90%;
+   width: 90%;
+   border-radius: 50%;
+   margin-top: 30px;
+}
+
+.img-hl2 img {
+   grid-column: 1/2;
+   grid-row: 6/7;
+   height: 90%;
+   width: 90%;
+   border-radius: 50%;
+   margin-top: 30px;
+}
+
+#main-hl {
+   grid-column: 2/3;
+   grid-row: 1/2;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 240px 240px 400px 400px 150px;
+   /* align-items: center;
+   justify-items: center; */
+   text-align: center;
+}
+
+#main-hl h2 {
+   grid-column: 1/2;
+   grid-row: 1/2;
+   font-family: "Yeseva One", Helvetica, sans-serif;
+   color: #778745;
+   font-size: 30px;
+   /* justify-self: center;
+   align-self: center; */
+   margin-top: 200px;
+   margin-right: 420px;
+}
+
+.info-hl {
+   grid-column: 1/2;
+   grid-row: 2/3;
+   color: #778745;
+   align-self: center;
+   justify-self: center;
+}
+
+.hardlandscaping-image1 {
+   grid-column: 1/2;
+   grid-row: 3/4;
+}
+
+.hardlandscaping-image1 img {
+   width: 90%;
+   height: 95%;
+   /* justify-self: center;
+   align-self: center; */
+   border: 5px solid #386b38;
+}
+
+/* .button {
+   grid-column: 1/2;
+   grid-row: 3/4;
+
+} */
+
+.hardlandscaping-image2 {
+   grid-column: 1/2;
+   grid-row: 4/5;
+}
+
+.hardlandscaping-image2 img {
+   width: 90%;
+   height: 95%;
+   justify-self: center;
+   align-self: center;
+   margin-top: 10px;
+   border: 5px solid #386b38;
+}
+
+.info-hl-1 {
+   grid-column: 1/2;
+   grid-row: 5/6;
+   color: #778745;
+   align-self: center;
+   justify-self: center;
+
+}
+
+
+
 
 
 
