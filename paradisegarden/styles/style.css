@@ -821,6 +821,8 @@ form {
    border: 1px solid #ccc;
    border-radius: 1em;
    margin-top: 150px;
+   background-color: #778745;
+   color: #386b38;
 }
 
 ul {
